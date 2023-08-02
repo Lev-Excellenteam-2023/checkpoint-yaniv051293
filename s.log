@@ -1,0 +1,84 @@
+==47219== Memcheck, a memory error detector
+==47219== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==47219== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==47219== Command: ./s
+==47219== Parent PID: 6289
+==47219== 
+==47219== 
+==47219== HEAP SUMMARY:
+==47219==     in use at exit: 2,751,860 bytes in 127,531 blocks
+==47219==   total heap usage: 400,003 allocs, 272,472 frees, 19,105,592 bytes allocated
+==47219== 
+==47219== 101,013 bytes in 9,183 blocks are indirectly lost in loss record 1 of 6
+==47219==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==47219==    by 0x1092B8: parseStudent (myp.c:20)
+==47219==    by 0x1093E4: createStudentNode (myp.c:39)
+==47219==    by 0x1095A8: main (myp.c:87)
+==47219==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==47219==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==47219==    by 0x1091A4: _start (in /home/yaniv/Desktop/c/s)
+==47219==    by 0x1FFF000007: ???
+==47219==    by 0x1B: ???
+==47219== 
+==47219== 137,760 bytes in 1,722 blocks are indirectly lost in loss record 2 of 6
+==47219==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==47219==    by 0x1093AD: createStudentNode (myp.c:34)
+==47219==    by 0x1095A8: main (myp.c:87)
+==47219==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==47219==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==47219==    by 0x1091A4: _start (in /home/yaniv/Desktop/c/s)
+==47219==    by 0x1FFF000007: ???
+==47219==    by 0x1B: ???
+==47219== 
+==47219== 458,850 bytes in 9,177 blocks are indirectly lost in loss record 3 of 6
+==47219==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==47219==    by 0x10928F: parseStudent (myp.c:18)
+==47219==    by 0x1093E4: createStudentNode (myp.c:39)
+==47219==    by 0x1095A8: main (myp.c:87)
+==47219==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==47219==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==47219==    by 0x1091A4: _start (in /home/yaniv/Desktop/c/s)
+==47219==    by 0x1FFF000007: ???
+==47219==    by 0x1B: ???
+==47219== 
+==47219== 458,850 bytes in 9,177 blocks are indirectly lost in loss record 4 of 6
+==47219==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==47219==    by 0x1092A3: parseStudent (myp.c:19)
+==47219==    by 0x1093E4: createStudentNode (myp.c:39)
+==47219==    by 0x1095A8: main (myp.c:87)
+==47219==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==47219==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==47219==    by 0x1091A4: _start (in /home/yaniv/Desktop/c/s)
+==47219==    by 0x1FFF000007: ???
+==47219==    by 0x1B: ???
+==47219== 
+==47219== 998,987 bytes in 90,817 blocks are definitely lost in loss record 5 of 6
+==47219==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==47219==    by 0x1092B8: parseStudent (myp.c:20)
+==47219==    by 0x1093E4: createStudentNode (myp.c:39)
+==47219==    by 0x1095A8: main (myp.c:87)
+==47219==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==47219==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==47219==    by 0x1091A4: _start (in /home/yaniv/Desktop/c/s)
+==47219==    by 0x1FFF000007: ???
+==47219==    by 0x1B: ???
+==47219== 
+==47219== 1,752,873 (596,400 direct, 1,156,473 indirect) bytes in 7,455 blocks are definitely lost in loss record 6 of 6
+==47219==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==47219==    by 0x1093AD: createStudentNode (myp.c:34)
+==47219==    by 0x1095A8: main (myp.c:87)
+==47219==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==47219==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==47219==    by 0x1091A4: _start (in /home/yaniv/Desktop/c/s)
+==47219==    by 0x1FFF000007: ???
+==47219==    by 0x1B: ???
+==47219== 
+==47219== LEAK SUMMARY:
+==47219==    definitely lost: 1,595,387 bytes in 98,272 blocks
+==47219==    indirectly lost: 1,156,473 bytes in 29,259 blocks
+==47219==      possibly lost: 0 bytes in 0 blocks
+==47219==    still reachable: 0 bytes in 0 blocks
+==47219==         suppressed: 0 bytes in 0 blocks
+==47219== 
+==47219== For lists of detected and suppressed errors, rerun with: -s
+==47219== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
